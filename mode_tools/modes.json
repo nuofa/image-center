@@ -1,0 +1,80 @@
+[
+    {
+        "name": "normal",
+        "size": "large",
+        "width": 960,
+        "height": 640,
+        "watermark": "images/watermark_normal_large.png",
+        "404": "images/404_normal_large.png",
+        "expire": 31536000
+    },
+    {
+        "name": "normal",
+        "size": "medium",
+        "width": 480,
+        "height": 320,
+        "watermark": "images/watermark_normal_medium.png",
+        "404": "images/404_normal_medium.png",
+        "expire": 31536000
+    },
+    {
+        "name": "normal",
+        "size": "small",
+        "width": 240,
+        "height": 160,
+        "watermark": "images/watermark_normal_small.png",
+        "404": "images/404_normal_small.png",
+        "expire": 31536000
+    },
+    {
+        "name": "wide",
+        "size": "large",
+        "width": 960,
+        "height": 320,
+        "watermark": "images/watermark_wide_large.png",
+        "404": "images/404_wide_large.png",
+        "expire": 31536000
+    },
+    {
+        "name": "wide",
+        "size": "medium",
+        "width": 480,
+        "height": 160,
+        "watermark": "images/watermark_wide_medium.png",
+        "404": "images/404_wide_medium.png",
+        "expire": 31536000
+    },
+    {
+        "name": "wide",
+        "size": "small",
+        "width": 240,
+        "height": 80,
+        "watermark": "images/watermark_wide_small.png",
+        "404": "images/404_wide_small.png",
+        "expire": 31536000
+    },
+    {
+        "name": "avatar",
+        "size": "large",
+        "width": 480,
+        "height": 480,
+        "fallback": "images/404_avatar_large.png",
+        "expire": 5256000
+    },
+    {
+        "name": "avatar",
+        "size": "medium",
+        "width": 240,
+        "height": 240,
+        "fallback": "images/404_avatar_medium.png",
+        "expire": 5256000
+    },
+    {
+        "name": "avatar",
+        "size": "small",
+        "width": 120,
+        "height": 120,
+        "fallback": "images/404_avatar_small.png",
+        "expire": 5256000
+    }
+]

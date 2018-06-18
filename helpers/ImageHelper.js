@@ -9,6 +9,9 @@ const formidable = require('formidable');
 const ModeHelper = require('./ModeHelper');
 const formatSupport = require('../formatSupport');
 
+// Required for temporary storage
+if (!fs.existsSync('temp')) fs.mkdirSync('temp');
+
 class ImageHelper {
 
     constructor(db) {
@@ -109,7 +112,7 @@ class ImageHelper {
         }
     
         // Copy the file
-        fs.createReadStream(file.path).pipe(fs.createWriteStream('backup/' + data.temporary + '.' + meta.format));
+        fs.createReadStream(file.path).pipe(fs.createWriteStream('temp/' + data.temporary + '.' + meta.format));
     
         return results;
     }
@@ -228,6 +231,10 @@ class ImageHelper {
         }
 
         return false;
+    }
+
+    async nextTemp() {
+        return await this.images.findOne({temporary: {$exists: true}}, {data: 0});
     }
 
 }
